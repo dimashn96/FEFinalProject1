@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=UTF-8>
+        <link rel="stylesheet" href="styleJS.css" type="text/css">
+        <link rel="icon" type="image/vnd.microsoft.icon" href="images/design/favicon.ico">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no, maximum-scale=1.0">
+        <script src="js/jquery-1.4.2.min.js" type="text/javascript"></script>
+        <script src="js/script.js"></script>
+    </head>
+
+    <body>
+
+       <header>
+
+           <div class="logo">
+               <img src="images/design/logoVAG.svg"/>
+               <div class="border"></div>
+           </div>
+
+           <div class="buttons">
+               <ul>
+                   <li class="button" id="main" onclick="loadPage(this.id)" title="Press to see our NOVELTIES">NOVELTIES</li>
+                   <li class="button" id="catalog" onclick="loadPage(this.id)" title="Press to open the CATALOG">CATALOG</li>
+                   <li class="button" id="order" onclick="loadPage(this.id)" title="Press to make an ORDER">ORDER</li>
+                   <li class="button" id="meetus" onclick="loadPage(this.id)" title="Press to MEET US">MEET US</li>
+               </ul>
+           </div>
+
+       </header>
+
+       <div class="mainBlock">
+
+           <script>loadPage(null, null);</script>
+
+       </div>
+
+       <footer>
+           <span class="copyright">Copyright 2017. All rights reserved.</span>
+           <span class="button" id="sitemap" onclick="loadPage(this.id)" title="Press to see the map of the site">Site map</span>
+       </footer>
+
+    </body>
+
+</html>

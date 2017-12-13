@@ -1,0 +1,87 @@
+        <div class="model fade">
+
+            <div class="slider" onmouseover="activateSlideShow()">
+
+                <div class="slide fade">
+                    <picture>
+                        <source srcset="images/cars/5/previews/1.jpg" media="(max-width: 400px)" title="Audi TT RS"/>
+                        <source srcset="images/cars/5/1.jpg" media="(max-width: 2000px)" title="Audi TT RS"/>
+                        <img srcset="images/cars/5/1.jpg" title="Audi TT RS" alt="The photo of Audi TT RS"/>
+                    </picture>
+                </div>
+                <div class="slide fade">
+                    <picture>
+                        <source srcset="images/cars/5/previews/2.jpg" media="(max-width: 400px)" title="Audi TT RS"/>
+                        <source srcset="images/cars/5/2.jpg" media="(max-width: 2000px)" title="Audi TT RS"/>
+                        <img srcset="images/cars/5/2.jpg" title="Audi TT RS" alt="The photo of Audi TT RS"/>
+                    </picture>
+                </div>
+                <div class="slide fade">
+                    <picture>
+                        <source srcset="images/cars/5/previews/3.jpg" media="(max-width: 400px)" title="Audi TT RS"/>
+                        <source srcset="images/cars/5/3.jpg" media="(max-width: 2000px)" title="Audi TT RS"/>
+                        <img srcset="images/cars/5/3.jpg" title="Audi TT RS" alt="The photo of Audi TT RS"/>
+                    </picture>
+                </div>
+                <div class="slide fade">
+                    <picture>
+                        <source srcset="images/cars/5/previews/4.jpg" media="(max-width: 400px)" title="Audi TT RS"/>
+                        <source srcset="images/cars/5/4.jpg" media="(max-width: 2000px)" title="Audi TT RS"/>
+                        <img srcset="images/cars/5/4.jpg" title="Audi TT RS" alt="The photo of Audi TT RS"/>
+                    </picture>
+                </div>
+                <div class="slide fade"><picture>
+                    <source srcset="images/cars/5/previews/5.jpg" media="(max-width: 400px)" title="Audi TT RS"/>
+                    <source srcset="images/cars/5/5.jpg" media="(max-width: 2000px)" title="Audi TT RS"/>
+                    <img srcset="images/cars/5/5.jpg" title="Audi TT RS" alt="The photo of Audi TT RS"/>
+                </picture></div>
+
+                <div class="prev unblock" onclick="prevSlide('preview')">&#10094</div>
+                <div class="next unblock" onclick="nextSlide('preview')">&#10095</div>
+
+                <div class="previews unblock">
+                    <span class="preview active" onclick="currentSlide(this.className, 0)"><img src="images/cars/5/previews/1.jpg" title="Audi TT RS" alt="The photo of Audi TT RS"/></span>
+                    <span class="preview" onclick="currentSlide(this.className, 1)"><img src="images/cars/5/previews/2.jpg" title="Audi TT RS" alt="The photo of Audi TT RS"/></span>
+                    <span class="preview" onclick="currentSlide(this.className, 2)"><img src="images/cars/5/previews/3.jpg" title="Audi TT RS" alt="The photo of Audi TT RS"/></span>
+                    <span class="preview" onclick="currentSlide(this.className, 3)"><img src="images/cars/5/previews/4.jpg" title="Audi TT RS" alt="The photo of Audi TT RS"/></span>
+                    <span class="preview" onclick="currentSlide(this.className, 4)"><img src="images/cars/5/previews/5.jpg" title="Audi TT RS" alt="The photo of Audi TT RS"/></span>
+                </div>
+
+                <div class="previewsHide unblock" onclick="previewsHide()">HIDE PREVIEWS</div>
+                <div class="previewsShow unblock" onclick="previewsShow()">SHOW PREVIEWS</div>
+
+            </div>
+
+            <div class="specification">
+
+                <div class="title">
+                    Audi TT RS
+                </div>
+
+                <div class="leftColumn">
+                    <p>Engine</p>
+                    <p>Transmission</p>
+                    <p>Max speed</p>
+                    <p>Power</p>
+                    <p>Torque</p>
+                    <p>Weight</p>
+                    <p>Drive</p>
+                    <p>100 km&#47;h</p>
+                    <p>Bodytype</p>
+                </div>
+
+                <div class="rightColumn">
+                    <p>4.0 V8 TFSI</p>
+                    <p>8 G&#8209;tronic</p>
+                    <p>305 km&#47;h</p>
+                    <p>605 hp</p>
+                    <p>700 nm</p>
+                    <p>1950 kg</p>
+                    <p>All&#8209;wheel</p>
+                    <p>3.7 s</p>
+                    <p>Avant</p>
+                </div>
+
+            </div>
+
+        </div>

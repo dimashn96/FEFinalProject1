@@ -1,0 +1,53 @@
+        <div class="order fade" onmouseover="formActivate()">
+            <h1>If you want to order the car, fill the all fields correctly and submit, please.</h1>
+            <form name="form" action="" method="post">
+                <ul>
+                    <li>
+                        <label for="fname">First name:</label>
+                        <input type="text" name="fname" placeholder="Ferdinand" onkeyup="formCheck('name', 'fname', this.value)"  autocomplete="off"/>
+                        <span id="fname" class="error fade">Incorrect first name. Enter 3 symbols or more.</span>
+                    </li>
+                    <li>
+                        <label for="sname">Second name:</label>
+                        <input type="text" name="sname" placeholder="Arthur" onkeyup="formCheck('name', 'sname', this.value)"  autocomplete="off"/>
+                        <span id="sname" class="error fade">Incorrect second name. Enter 3 symbols or more.</span>
+                    </li>
+                    <li>
+                        <label for="tname">Third name:</label>
+                        <input type="text" name="tname" placeholder="Porsche" onkeyup="formCheck('name', 'tname', this.value)"  autocomplete="off"/>
+                        <span id="tname" class="error fade">Incorrect third name. Enter 3 symbols or more.</span>
+                    </li>
+                    <li>
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="email" placeholder="mail@gmail.com" onkeyup="formCheck('email', 'email', this.value)"  autocomplete="off"/>
+                        <span id="email" class="error fade">Incorrect E-mail address. Enter only real address.</span>
+                    </li>
+                    <li>
+                        <label for="phone">Phone:</label>
+                        <input type="tel" name="phone" placeholder="4915123456789" onkeyup="formCheck('phone', 'phone', this.value)"  autocomplete="off"/>
+                        <span id="phone" class="error fade">Incorrect phone number. Enter only 13 symbols.</span>
+                    </li>
+                    <li>
+                        <label for="car">Car model:</label>
+                        <input type="text" name="car" placeholder="Audi RS6 Perfomance" onkeyup="formCheck('car', 'car', this.value)"  autocomplete="off"/>
+                        <span id="car" class="error fade">Incorrect car name. Enter 6 symbols or more.</span>
+                    </li>
+                    <li>
+                        <input class="button" type="button" value="Submit" onclick="activateModalWindow()"/>
+                        <input class="button" type="reset" value="Reset"/>
+                    </li>
+                </ul>
+            </form>
+
+            <div class="modalWindow">
+                <div class="background"></div>
+                <div class="window">
+                    <div class="content">
+                        <p>Thanks for your order!</p>
+                        <p>Our specialists will contact you in the near future.</p>
+                    </div>
+                    <button onclick="disactivateModalWindow()">OK</button>
+                </div>
+            </div>
+
+        </div>
